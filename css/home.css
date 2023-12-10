@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #004d74;
+  margin: 0;
+}
+
+/* ----- ----- ----- Cabeza de Pagina ----- ----- ----- */
+
+header .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #061945;
+  margin-bottom: 15px;
+}
+
+.Logop {
+  height: 60px;
+}
+.contenedor nav a {
+  padding-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.contenedor nav a:hover {
+  color: gray;
+}
+/*----- ------ ----- Cuerpo de pagina ----- ----- -----*/
+.pelis {
+  color: #f4fefd;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  display: inline;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+.series {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  display: inline;
+  color: #f4fefd;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+#serietitulo {
+  padding-top: 15px;
+}
+.parrafos {
+  color: #f4fefd;
+}
+.titulosseries {
+  color: #f4fefd;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+.icono {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 5px;
+}
+.carrusel-peliculas {
+  margin-top: 10px;
+  width: 82%;
+  margin-left: 130px;
+}
+.carrusel-peliculas:hover {
+  transition: 0.6s;
+  border-color: 2px solid aliceblue;
+}
+
+/*----- ------ ----- Pie de pagina ----- ----- ----- */
+
+.pie-pagina {
+  width: 100%;
+  background-color: #061945;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 280px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #032030;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #032030;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+
+  .img-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .img-container img {
+    max-width: 50%;
+    height: auto;
+  }
+}
